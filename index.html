@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ángel Palencia · Portfolio</title>
+  <meta name="description" content="Portfolio de Ángel Palencia, Project Manager y estudiante de Desarrollo de Aplicaciones Web.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232563eb'/><text x='50' y='66' font-size='48' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'>ÁP</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav container">
+      <a href="#inicio" class="logo">ÁP</a>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Cambiar idioma / Change language">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero container">
+      <p class="eyebrow" data-i18n="hero.hello">Hola, soy</p>
+      <h1>Ángel Palencia</h1>
+      <p class="role" data-i18n="hero.role">Project Manager y estudiante de Desarrollo</p>
+      <p class="lead" data-i18n="hero.lead">Combino la gestión de proyectos con el desarrollo web: organizo equipos y plazos, y ahora también construyo las soluciones.</p>
+      <div class="hero-actions">
+        <a href="#proyectos" class="btn btn-primary" data-i18n="hero.cta">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-ghost" data-i18n="hero.contact">Contactar</a>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section container">
+      <h2 data-i18n="about.title">Sobre mí</h2>
+      <div class="about-grid">
+        <p data-i18n="about.p1">Trabajo como Project Manager, coordinando personas, prioridades y entregas. Esa experiencia me ha llevado a querer entender a fondo cómo se construye el software, así que estoy formándome en Desarrollo de Aplicaciones Web.</p>
+        <p data-i18n="about.p2">Mi objetivo es unir los dos mundos: hablar el idioma del negocio y el del código para que los proyectos lleguen a buen puerto.</p>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section container">
+      <h2 data-i18n="skills.title">Habilidades</h2>
+      <div class="skills-grid">
+        <article class="card">
+          <h3 data-i18n="skills.pm.title">Gestión de proyectos</h3>
+          <ul class="tags">
+            <li data-i18n="skills.pm.1">Planificación</li>
+            <li data-i18n="skills.pm.2">Coordinación de equipos</li>
+            <li data-i18n="skills.pm.3">Seguimiento de plazos</li>
+            <li data-i18n="skills.pm.4">Comunicación con clientes</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 data-i18n="skills.dev.title">Desarrollo</h3>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Git</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section container">
+      <h2 data-i18n="projects.title">Proyectos</h2>
+      <div class="projects-grid">
+        <article class="card project">
+          <span class="badge" data-i18n="projects.badge">En curso</span>
+          <h3 data-i18n="projects.p1.title">Este portfolio</h3>
+          <p data-i18n="projects.p1.desc">Web personal bilingüe hecha con HTML, CSS y JavaScript, sin frameworks, y publicada en GitHub Pages.</p>
+          <ul class="tags small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+        <article class="card project placeholder">
+          <h3 data-i18n="projects.soon.title">Próximamente</h3>
+          <p data-i18n="projects.soon.desc">Estoy trabajando en nuevos proyectos. Vuelve pronto o sígueme en GitHub para verlos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="section container contact">
+      <h2 data-i18n="contact.title">Contacto</h2>
+      <p data-i18n="contact.text">¿Quieres hablar de un proyecto o simplemente saludar? Encuéntrame aquí:</p>
+      <div class="hero-actions">
+        <a href="https://github.com/Palencialog2" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year"></span> Ángel Palencia · <span data-i18n="footer.made">Hecho con HTML, CSS y JavaScript</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
